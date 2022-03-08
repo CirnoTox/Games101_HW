@@ -1,0 +1,3 @@
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/build/CMakeFiles/rebuild_cache.dir
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/build/CMakeFiles/edit_cache.dir
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/build/CMakeFiles/Transformation.dir
