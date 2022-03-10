@@ -111,44 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Rasterizer
+# Target rules for targets named Transformation
 
 # Build rule for target.
-Rasterizer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Rasterizer
-.PHONY : Rasterizer
+Transformation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Transformation
+.PHONY : Transformation
 
 # fast build rule for target.
-Rasterizer/fast:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/build
-.PHONY : Rasterizer/fast
-
-Triangle.o: Triangle.cpp.o
-
-.PHONY : Triangle.o
-
-# target to build an object file
-Triangle.cpp.o:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/Triangle.cpp.o
-.PHONY : Triangle.cpp.o
-
-Triangle.i: Triangle.cpp.i
-
-.PHONY : Triangle.i
-
-# target to preprocess a source file
-Triangle.cpp.i:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/Triangle.cpp.i
-.PHONY : Triangle.cpp.i
-
-Triangle.s: Triangle.cpp.s
-
-.PHONY : Triangle.s
-
-# target to generate assembly for a file
-Triangle.cpp.s:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/Triangle.cpp.s
-.PHONY : Triangle.cpp.s
+Transformation/fast:
+	$(MAKE) -f CMakeFiles/Transformation.dir/build.make CMakeFiles/Transformation.dir/build
+.PHONY : Transformation/fast
 
 main.o: main.cpp.o
 
@@ -156,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Transformation.dir/build.make CMakeFiles/Transformation.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Transformation.dir/build.make CMakeFiles/Transformation.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,35 +147,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Transformation.dir/build.make CMakeFiles/Transformation.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-rasterizer.o: rasterizer.cpp.o
-
-.PHONY : rasterizer.o
-
-# target to build an object file
-rasterizer.cpp.o:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/rasterizer.cpp.o
-.PHONY : rasterizer.cpp.o
-
-rasterizer.i: rasterizer.cpp.i
-
-.PHONY : rasterizer.i
-
-# target to preprocess a source file
-rasterizer.cpp.i:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/rasterizer.cpp.i
-.PHONY : rasterizer.cpp.i
-
-rasterizer.s: rasterizer.cpp.s
-
-.PHONY : rasterizer.s
-
-# target to generate assembly for a file
-rasterizer.cpp.s:
-	$(MAKE) -f CMakeFiles/Rasterizer.dir/build.make CMakeFiles/Rasterizer.dir/rasterizer.cpp.s
-.PHONY : rasterizer.cpp.s
 
 # Help Target
 help:
@@ -212,16 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Rasterizer"
-	@echo "... Triangle.o"
-	@echo "... Triangle.i"
-	@echo "... Triangle.s"
+	@echo "... Transformation"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... rasterizer.o"
-	@echo "... rasterizer.i"
-	@echo "... rasterizer.s"
 .PHONY : help
 
 

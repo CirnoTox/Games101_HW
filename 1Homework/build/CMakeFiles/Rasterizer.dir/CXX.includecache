@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/Triangle.hpp
+eigen3/Eigen/Eigen
+-
+
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/main.cpp
+Triangle.hpp
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/Triangle.hpp
+rasterizer.hpp
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/rasterizer.hpp
+eigen3/Eigen/Eigen
+-
+eigen3/Eigen/src/Core/Matrix.h
+-
+iostream
+-
+opencv2/opencv.hpp
+-
+
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/rasterizer.hpp
+Triangle.hpp
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/Triangle.hpp
+algorithm
+-
+eigen3/Eigen/Eigen
+-
+

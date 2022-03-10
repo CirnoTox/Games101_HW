@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Rasterizer
+CMAKE_PROJECT_NAME:STATIC=Transformation
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -209,14 +209,14 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=/usr/local/share/OpenCV
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/local/share/eigen3/cmake
 
 //Value Computed by CMake
-Rasterizer_BINARY_DIR:STATIC=/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/build
+Transformation_BINARY_DIR:STATIC=/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework/build
 
 //Value Computed by CMake
-Rasterizer_SOURCE_DIR:STATIC=/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework
+Transformation_SOURCE_DIR:STATIC=/home/chenzixiao/Source_Code/Computer_Graphics/Games101/1Homework
 
 
 ########################
@@ -366,6 +366,4 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding OpenCV
-FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v3.4.17()]
 
