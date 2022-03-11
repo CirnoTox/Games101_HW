@@ -50,17 +50,22 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
     // Create the projection matrix for the given parameters.
     // Then return it.
     Eigen::Matrix4f mPOrth1,mPOrth2,mPPre;
-    
+    float half_eye_fovY = eye_fov / 2 / 180.0 * MY_PI;
+    float top = zNear * tan(half_eye_fovY);
+    float bottom = -top;
+    float right = aspect_ratio * top;
+    float left = -right;
+
     mPPre<<zNear,0,0,0,
             0,zNear,0,0,
             0,0,zNear+zFar,-zNear*zFar,
             0,0,1,0;
-    mPOrth1<<1,0,0,0,
-            0,1,0,0,
+    mPOrth1<<2/(right-left),0,0,0,
+            0,2/(top-bottom),0,0,
             0,0,2/(zNear-zFar),0,
             0,0,0,1;
-    mPOrth2<<1,0,0,0,
-            0,1,0,0,
+    mPOrth2<<1,0,0,-(right + left)/2,
+            0,1,0,-(top+bottom)/2,
             0,0,1,-(zNear+zFar)/2,
             0,0,0,1;
     return mPOrth1*mPOrth2*mPPre*projection;
