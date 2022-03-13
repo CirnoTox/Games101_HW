@@ -31,17 +31,16 @@ Eigen::Matrix4f get_model_matrix(float rotation_angle)
 
 Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio, float zNear, float zFar)
 {
-   
     Eigen::Matrix4f projection = Eigen::Matrix4f::Identity();
 
     Eigen::Matrix4f persp_to_ortho = Eigen::Matrix4f::Identity();
-    persp_to_ortho << zNear, 0,     0,            0,
-                              0,     zNear, 0,            0,
-                                              0,     0,     zNear + zFar, -(zNear*zFar),
-                                                              0,     0,     1,            0;
+    persp_to_ortho << zNear, 0,0,0,
+                      0,zNear,0,0,
+                      0,0,zNear + zFar, -(zNear*zFar),
+                      0,0,1,0;
 
     float half_eye_fovY = eye_fov / 2 / 180.0 * MY_PI;
-
+    zNear*=-1;
     float top = zNear * tan(half_eye_fovY);
     float bottom = -top;
     float right = aspect_ratio * top;
@@ -49,15 +48,15 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio, float z
 
         Eigen::Matrix4f ortho_translate = Eigen::Matrix4f::Identity();
     ortho_translate << 1, 0, 0, -(right + left) / 2,
-                                   0, 1, 0, -(top + bottom) / 2,
-                                                   0, 0, 1, -(zNear + zFar) / 2,
-                                                                   0, 0, 0, 1;
+                       0, 1, 0, -(top + bottom) / 2,
+                       0, 0, 1, -(zNear + zFar) / 2,
+                       0, 0, 0, 1;
 
     Eigen::Matrix4f ortho_scale = Eigen::Matrix4f::Identity();
-    ortho_scale << 2 / (right - left), 0,                     0,                  0,
-                           0,                  2 / (top - bottom),    0,                  0,
-                                       0,                  0,                     2 / (zNear - zFar), 0,
-                                                   0,                  0,                     0,                  1;
+    ortho_scale << 2 / (right - left), 0,0,0,
+                   0,2 / (top - bottom),0,0,
+                   0,0,2 / (zNear - zFar), 0,
+                   0,0,0,1;
 
     projection = ortho_scale * ortho_translate * persp_to_ortho*projection;
 

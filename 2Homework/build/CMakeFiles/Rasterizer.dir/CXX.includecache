@@ -12,23 +12,19 @@ eigen3/Eigen/Eigen
 
 /home/chenzixiao/Source_Code/Computer_Graphics/Games101/2Homework/global.hpp
 
-/home/chenzixiao/Source_Code/Computer_Graphics/Games101/2Homework/rasterizer.cpp
-algorithm
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/2Homework/main.cpp
+iostream
 -
-Eigen/Dense
--
-cstdlib
--
-eigen3/Eigen/src/Core/Matrix.h
--
-vector
+opencv2/opencv.hpp
 -
 rasterizer.hpp
 /home/chenzixiao/Source_Code/Computer_Graphics/Games101/2Homework/rasterizer.hpp
-opencv2/opencv.hpp
+eigen3/Eigen/src/Core/Matrix.h
 -
-math.h
--
+global.hpp
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/2Homework/global.hpp
+Triangle.hpp
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/2Homework/Triangle.hpp
 
 /home/chenzixiao/Source_Code/Computer_Graphics/Games101/2Homework/rasterizer.hpp
 eigen3/Eigen/Eigen
