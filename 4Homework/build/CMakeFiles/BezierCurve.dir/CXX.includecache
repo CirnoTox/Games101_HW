@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenzixiao/Source_Code/Computer_Graphics/Games101/4Homework/main.cpp
+chrono
+-
+cmath
+-
+iostream
+-
+opencv2/core/types.hpp
+-
+opencv2/opencv.hpp
+-
+
