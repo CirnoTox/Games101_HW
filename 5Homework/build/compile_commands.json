@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/build",
+  "command": "/usr/bin/c++      -Wall -Wextra -pedantic -Wshadow -Wreturn-type -fsanitize=undefined -std=gnu++17 -o CMakeFiles/RayTracing.dir/main.cpp.o -c /home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/main.cpp",
+  "file": "/home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/main.cpp"
+},
+{
+  "directory": "/home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/build",
+  "command": "/usr/bin/c++      -Wall -Wextra -pedantic -Wshadow -Wreturn-type -fsanitize=undefined -std=gnu++17 -o CMakeFiles/RayTracing.dir/Scene.cpp.o -c /home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/Scene.cpp",
+  "file": "/home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/Scene.cpp"
+},
+{
+  "directory": "/home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/build",
+  "command": "/usr/bin/c++      -Wall -Wextra -pedantic -Wshadow -Wreturn-type -fsanitize=undefined -std=gnu++17 -o CMakeFiles/RayTracing.dir/Renderer.cpp.o -c /home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/Renderer.cpp",
+  "file": "/home/chenzixiao/Source_Code/Computer_Graphics/Games101/5Homework/Renderer.cpp"
+}
+]
